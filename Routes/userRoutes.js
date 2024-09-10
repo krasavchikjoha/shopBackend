@@ -1,6 +1,6 @@
 import express from "express";
 import * as usersController from "../Controllers/usersController.js";
-const router = express.Router();
+export const userRoutes = express.Router();
 
 router
   .route("/")
@@ -8,5 +8,3 @@ router
   .post(usersController.createUser);
 
 router.route("/check").get(usersController.getUser);
-
-export default router;
