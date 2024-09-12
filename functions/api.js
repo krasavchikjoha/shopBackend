@@ -2,7 +2,7 @@ import express from "express";
 import ServerlessHttp from "serverless-http";
 import { configDotenv } from "dotenv";
 import mongoose from "mongoose";
-import { userRoutes } from "../Routes/userRoutes";
+import { userRoutes } from "../Routes/userRoutes.js";
 
 const app = express();
 app.use(express.json());
